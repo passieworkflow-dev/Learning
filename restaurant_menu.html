@@ -18,7 +18,7 @@
       <header>
         <h1>Maxy's Mini Menu</h1>
         <figure>
-          <img src="https://kinderboerderij.startpagina.be/images/upload/f0/f0181f6770f81c5695d58b24c6f7f279/bigthumbs/kinderboerderij-rivierenh-Edh.jpg" id="header-img" alt="funny menu image" <br>
+          <img src="https://kinderboerderij.startpagina.be/images/upload/f0/f0181f6770f81c5695d58b24c6f7f279/bigthumbs/kinderboerderij-rivierenh-Edh.jpg" id="header-img" alt="funny menu image"> <br>
             <figcaption>The enitre menu in one nice view <br>(not to order from!) </figcaption>
         </figure>
         <nav><ul>
@@ -29,40 +29,51 @@
       <hr>
 
       <main>
-        <section id="menu">
+        <section id="menu"> <!-- the start of the menu-->
           <h2>Menu</h2>
           <article><h3>Bertha nr.0553</h3>
-            <img id="#bertha" src="https://a-z-animals.com/media/2022/11/shutterstock_1728214024-1536x1022.jpeg" alt="Bertha the cow" >
-            <p>This is our beloved Bertha.<br>From our garden, straight to your plate for the buy-now price of only <u>$59.99</u></p>
+            <img id="bertha" src="https://a-z-animals.com/media/2022/11/shutterstock_1728214024-1536x1022.jpeg" alt="Bertha the cow">
+            <p>This is our beloved Bertha.<br>From our garden, straight to your plate for the buy-now price of only <i>$59.99</u></p>
           </article>
           <article><h3>Sheep Berry</h3>
-            <img id="#berry"src="https://modernfarmer.com/wp-content/uploads/2017/12/Funny-Sheep-Facts-768x512.webp" alt="Sheep Berry">
-            <p>This is our beloved Bertha.<br>From our garden, straight to your plate for the buy-now price of only <u>$35.50</u></p>
+            <img id="berry"src="https://modernfarmer.com/wp-content/uploads/2017/12/Funny-Sheep-Facts-768x512.webp" alt="Sheep Berry">
+            <p>This is our beloved Bertha.<br>From our garden, straight to your plate for the buy-now price of only <i>$35.50</u></p>
           </article>
           <article><h3>Pigasso the pig</h3>
-            <img id="#perry" src="https://image.volkskrant.nl/241404484/width/1280/met-een-op-maat-gemaakte-kwast-werkt-pigcasso-in-2022-aan-een" alt="Perry pigasso">
-            <p>This is Perry the most artistic pig you will ever eat.<br>Since Perry was just a little piggy we knew he was special, now he is availible for just <u>$99.99</u></p>
+            <img id="perry" src="https://image.volkskrant.nl/241404484/width/1280/met-een-op-maat-gemaakte-kwast-werkt-pigcasso-in-2022-aan-een" alt="Perry pigasso">
+            <p>This is Perry the most artistic pig you will ever eat.<br>Since Perry was just a little piggy we knew he was special, now he is availible for just <i>$99.99</u></p>
           </article>
         </section>
-        <section id="order-form">
+        <section id="order-form"> <!--Order section-->
           <form>
-          <h2>Place your order</h2>
-            <label>Pieces of Bertha:</label>
-              <input type="number" name="bertha" min="0" max="10" /></br>
-            <label>Pieces of Berry:</label>
-              <input type="number" name="berry" min="0" max="50" /></br>
-            <label>Pieces of Perry:</label>
-              <input type="number" name="perry" min="0" max="2" />
-            <br><br>
+          <h2>Place Your Order</h2>
+            <label for="bertha">Pieces of Bertha:</label>
+              <input id="bertha" type="number" name="bertha" min="0" max="10" /></br>
+            <label for="berry">Pieces of Berry:</label>
+              <input id="berry" type="number" name="berry" min="0" max="50" /></br>
+            <label for="perry">Pieces of Perry:</label>
+              <input id="perry" type="number" name="perry" min="0" max="2" />
+            <br><br> 
+            <!--Sides cnan be selected here-->
+            <label>Add-ons:</label><br>
+              <input type="checkbox" id="sauce" name="addons" value="sauce">
+            <label for="sauce">Sauce (+$5)</label><br>
+              <input type="checkbox" id="veggies" name="addons" value="veggies">
+            <label for="veggies">Veggies (+$13)</label><br>
+            
+
+            <br><br><!-- Delivery options -->
             <label>
-              <input type="radio" name="#home-delivery"/>Delivery at home.<br> 
-              <input type="radio" name="#pick-up-point"/>Delivery at a pick-up point.<br> 
-              <input type="radio" name="#pick-up"/>Pick-up at our place.
-            </label>
-            <br><br>
+              <input type="radio" name="delivery"/>Delivery at home.</label><br> 
+            <label>
+              <input type="radio" name="delivery"/>Delivery at a pick-up point.</label><br>
+            <label>
+              <input type="radio" name="delivery"/>Pick-up at our place.</label>
+            
+            <br><br> <!--Other requests-->
               <label>Other requests for the order:</label><br>
             <textarea maxlength="500" placeholder="Special requests."></textarea><br>
-              <input type="submit" name="Go To Checkout"></input>
+              <input type="submit" value="Go To Checkout"></input>
           </form>
         </section>
       </main>
