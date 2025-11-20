@@ -54,12 +54,14 @@
             <label>Pieces of Perry:</label>
               <input type="number" name="perry" min="0" max="2" />
             <br><br>
-              <input type="checkbox" name="#home-delivery"/>Delivery at home.<br> 
-              <input type="checkbox" name="#pick-up-point"/>Delivery at a pick-up point.<br> 
-              <input type="checkbox" name="#pick-up"/>Pick-up at our place.
+            <label>
+              <input type="radio" name="#home-delivery"/>Delivery at home.<br> 
+              <input type="radio" name="#pick-up-point"/>Delivery at a pick-up point.<br> 
+              <input type="radio" name="#pick-up"/>Pick-up at our place.
+            </label>
             <br><br>
               <label>Other requests for the order:</label><br>
-            <textarea maxlength="500" placeholder="Special requests."></textarea>
+            <textarea maxlength="500" placeholder="Special requests."></textarea><br>
               <input type="submit"></input>
           </form>
         </section>
